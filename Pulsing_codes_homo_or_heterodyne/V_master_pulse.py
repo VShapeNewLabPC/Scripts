@@ -44,7 +44,7 @@ SSB_atom      = qt.instruments.get('SSB_atom')
 ## Digital attenuators (step=0.25 dB)
 Rudat = qt.instruments.get('RUDAT_ph')
 Rudat_2 = qt.instruments.get('RUDAT_comp')
-Rudat_3 = qt.instruments.get('RUDAT_pump')
+# Rudat_3 = qt.instruments.get('RUDAT_pump')
 # Att_JPA = qt.instruments.get('Attenuator_JPA')
 
 ## Current sources HP

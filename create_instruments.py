@@ -31,7 +31,7 @@ except:
    print '        Failed'
 
 
-print '    Import RUDAT compensation'
+print '    Import RUDAT qubit'
 try:
    RUDAT_comp = qt.instruments.create('RUDAT_comp', 'RUDAT8000', address = 'http://192.168.10.10')
    print '        Succed'
@@ -40,16 +40,16 @@ except:
    print '        Failed'
 
 
-print '    Import RUDAT pump and comp'
-try:
-   RUDAT_pump = qt.instruments.create('RUDAT_pump', 'RUDAT8000', address = 'http://192.168.10.11')
-   print '        Succed'
-except:
-   qt.instruments.remove('RUDAT_pump')
-   print '        Failed'
+# print '    Import RUDAT pump'
+# try:
+#    RUDAT_pump = qt.instruments.create('RUDAT_pump', 'RUDAT8000', address = 'http://192.168.10.11')
+#    print '        Succed'
+# except:
+#    qt.instruments.remove('RUDAT_pump')
+#    print '        Failed'
 
 
-print '    Import RUDAT photon'
+print '    Import RUDAT readout'
 try:
    RUDAT_ph = qt.instruments.create('RUDAT_ph', 'RUDAT8000', address = 'http://192.168.10.12')
    print '        Succed'
